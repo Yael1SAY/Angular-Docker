@@ -530,3 +530,21 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+<table>
+  <tr>
+    <th style="width: 50px;">id</th>
+    <th style="width: 200px;">Email</th>
+    <th style="width: 150px;">Nombre</th>
+    <th style="width: 150px;">Telefono</th>
+    <th style="width: 50px;">Usuario</th>
+    <th style="width: 200px;">Sitio Web</th>
+  </tr>
+  <tr *ngFor="let usuario of usuarios">
+    <td style="width: 50px; text-align: center;">{{usuario.id}}</td>
+    <td style="width: 200px; text-align: center;">{{usuario.email}}</td>
+    <td style="width: 150px; text-align: center;">{{usuario.name}}</td>
+    <td style="width: 150px; text-align: center;">{{usuario.phone}}</td>
+    <td style="width: 50px; text-align: center;">{{usuario.username}}</td>
+    <td style="width: 200px; text-align: center;">{{usuario.website}}</td>
+  </tr>
+</table>
